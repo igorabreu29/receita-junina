@@ -1,3 +1,3 @@
 # receita-junina
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/web-platform-juxmja)
+Site Desenvolvido com HTML, CSS e um pouco de JavaScript. Sendo o site responsivo e adaptável para outras telas
