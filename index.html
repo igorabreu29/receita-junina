@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <title>Recipe Junin</title>
+  </head>
+  <body>
+    <div id="app">
+      <section class="informs">
+        <div class="eat">
+          <img src="./assets/eat.svg" alt="" />
+        </div>
+        <div class="inform">
+          <h1>Pamonha</h1>
+          <h2>Prato típico com milho verde ralado</h2>
+          <div class="quantitys">
+            <span>Porções</span>
+            <div class="quantity-add-remove">
+              <button data-state="remove">
+                <i class="ph ph-minus-circle"></i>
+              </button>
+              <span class="quantity-item">1</span>
+              <button data-state="add">
+                <i class="ph ph-plus-circle"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="recipes">
+        <div class="ingredients">
+          <h3>
+            <i class="ph ph-tote-simple"></i>
+            Ingredientes
+          </h3>
+          <ul>
+            <li>1 espiga de milho verde</li>
+            <li>1 colher de sopa de açúcar</li>
+            <li>1 colher de sopa de manteiga</li>
+            <li>Sal a gosto</li>
+            <li>Palha de milho (para embrulhar)</li>
+          </ul>
+        </div>
+
+        <div class="method">
+          <h3>
+            <i class="ph ph-cooking-pot"></i>
+            Método de preparo
+          </h3>
+
+          <ol>
+            <li>Descasque a espiga de milho e corte os grãos.</li>
+            <li>Bata o milho, açúcar, manteiga e sal no liquidificador.</li>
+            <li>Coloque a massa nas palhas de milho e feche bem.</li>
+            <li>Cozinhe em água fervente por cerca de 40 minutos.</li>
+            <li>Deixe esfriar e sirva.</li>
+          </ol>
+        </div>
+      </section>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

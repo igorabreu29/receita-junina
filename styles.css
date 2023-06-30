@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #feece0;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+i {
+  font-size: 1.25rem;
+}
+
+#app {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.informs {
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.inform {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.inform h1 {
+  color: #58190a;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.inform h2 {
+  font-weight: 500;
+  color: #58190a;
+}
+
+.inform .quantitys,
+.quantitys .quantity-add-remove {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.quantitys .quantity-add-remove button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+.inform div span,
+.inform div i {
+  font-size: 1.25rem;
+  color: #9b6647;
+}
+
+.recipes {
+  height: 50vh;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+
+  color: white;
+  background-color: #9b6647;
+}
+
+.ingredients,
+.method {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.ingredients h3,
+.method h3 {
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.25rem;
+}
+
+.ingredients ul,
+.method ol {
+  font-size: 0.875rem;
+}
+
+.ingredients li,
+.method li {
+  margin-left: 1.25rem;
+}
+
+@media (max-width: 676px) {
+  .inform h1 {
+    font-size: 2rem;
+  }
+
+  .inform h2 {
+    font-size: 1.25rem;
+  }
+
+  .inform div span,
+  .inform div i {
+    font-size: 1rem;
+  }
+
+  .recipes {
+    padding: 0 2rem;
+  }
+
+  .ingredients h3,
+  .method h3 {
+    font-size: 1.25rem;
+    text-align: center;
+  }
+
+  .ingredients ul,
+  .method ol {
+    font-size: 0.675rem;
+  }
+}
+
+@media (max-width: 544px) {
+  #app {
+    gap: 2rem;
+  }
+
+  .informs {
+    gap: 0;
+    flex-direction: column;
+    height: auto;
+    padding: 0 1rem;
+  }
+
+  .eat {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .eat img {
+    width: 12rem;
+    height: 9rem;
+  }
+
+  .inform {
+    align-items: center;
+  }
+
+  .inform h2 {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .recipes {
+    padding: 1rem 2rem;
+    flex-direction: column;
+    gap: 1.5rem;
+    height: auto;
+  }
+
+  .ingredients h3,
+  .method h3 {
+    margin: 0 auto;
+  }
+}
